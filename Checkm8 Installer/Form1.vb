@@ -40,7 +40,7 @@ Public Class Form1
             f = MsgBox("Is Python 3.7.x installed?", vbYesNo)
             If Not f = vbYes Then
                 logger("Downloading the Python 3.7.4 installer...")
-                My.Computer.Network.DownloadFile("http://goodertech.com/python.exe", "pythoninstaller.exe")
+                My.Computer.Network.DownloadFile("https://www.python.org/ftp/python/3.7.4/python-3.7.4-amd64-webinstall.exe", "pythoninstaller.exe")
                 MsgBox("Press OK to start the python installation process, make sure to checkmark ""Add Python 3.7 to path"" once you finish installing python press ""Ok"" on the next prompt.")
                 logger("Starting the Python installer...")
                 Process.Start("pythoninstaller.exe")
